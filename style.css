@@ -1,0 +1,266 @@
+/* cool fonts */
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* height: 95vh;
+    width: 90%; */
+    margin: 0;
+    overflow: hidden;
+}
+
+#backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: .6s ease-in-out;
+}
+
+#mainTitleContainer {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    left: 0px;
+    transition: .6s ease-in-out;
+}
+
+
+#restaurantName {
+    width: auto;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    letter-spacing: 10px;
+    
+}
+
+#restaurantSlogan {
+    width: auto;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 2px;
+    opacity: .85;
+}
+
+#arrowDown {
+    width: 30px;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    opacity: .7;
+    transition-duration: .3s;
+}
+#arrowDown:hover {
+    transform: rotate(90deg) scale(1.3);
+    opacity: 1;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+#tabContainer {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#tabContainer div {
+    margin: 10px;
+    font-size: 15px;
+    transition-duration: .4s;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1.5px;
+}
+#tabContainer div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition-duration: .4s;
+    text-decoration: underline;
+}
+#tabContainer img {
+    width: 6px;
+    position: relative;
+    top: 1px;
+}
+#aboutContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: calc(100vh - 200px);
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    transition-duration: 1s;
+}
+#textContainer {
+    grid-column: 1/2;
+    padding: 20px;
+}
+#aboutTextMain {
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#aboutTextSub {
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(100, 100, 100);
+    letter-spacing: .5px;
+}
+
+#imageContainer{
+    grid-column: 2/3;
+    width: 100%;
+    overflow: hidden;
+}
+#vegan1 {
+    height: 100%;
+    position: relative;
+    right: 100px;
+}
+
+#imageContainer2 {
+    grid-column: 3/4;
+    overflow: hidden;
+    width: 100%;
+}
+#vegan2 {
+    height: 100%;
+    transform-origin: 90% 50%;
+    position: relative;
+    right: 200px;
+}
+
+#menuContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: calc(100vh - 200px);
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px auto;
+    grid-template-columns: 1fr;
+    transition-duration: 1s;
+    margin: auto;
+}
+
+#menuTextMain {
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#menuItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itemContainer {
+    width: 300px;
+    margin: 10px 30px 10px 30px;
+}
+
+.itemImageContainer {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.itemImageContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.itemTitle {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    /* letter-spacing: .5px; */
+}
+.itemName {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: left;
+    font-weight: bold;
+}
+.itemPrice {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: right;
+    font-style: italic;
+}
+.itemDescription {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .5px;
+    color: rgb(100, 100, 100);
+}
+#contactContainer {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px auto;
+    grid-template-columns: 1fr;
+    transition-duration: 1s;
+    margin: auto;
+}
+
+#contactTitle {
+    color: black;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#contactForm {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#socialMediaTab {
+    display: flex;
+    justify-content: center;
+}
+#socialMediaTab img {
+    margin: 15px;
+    transition-duration: .1s;
+}
+
+#socialMediaTab img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition-duration: .1s;
+}
