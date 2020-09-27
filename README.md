@@ -1,5 +1,5 @@
 # restaurantPage
 
-[Link](https://github.com/YipAnthony/restaurantPage/settings)
+[Link](https://yipanthony.github.io/restaurantPage/)
 
 Testing vanilla Javascript/CSS animations and DOM manipulation. 
